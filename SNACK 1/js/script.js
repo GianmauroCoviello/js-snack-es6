@@ -10,15 +10,15 @@ let listaInvitati = ospiti.map((item,index) => {
     cena = {
         tavolo: 'Tavolo Vip',
         nome : item,
-        posto: Math.floor(index + 10)
+        posto: (index + 10)
     }
         return cena
        
 })
 
 // CICLO FOR PER STAMPARE IN CONSOLE I DATI INSERITI
-for (i=0; i< listaInvitati.length; i++){
-    console.log(listaInvitati[i].tavolo);
-    console.log(listaInvitati[i].nome);
-    console.log(listaInvitati[i].posto);
-}
+listaInvitati.forEach((elem)=>{
+
+    console.log(` il Signor ${elem.nome} risiede nel ${elem.tavolo} al posto: ${elem.posto}` )
+
+})
