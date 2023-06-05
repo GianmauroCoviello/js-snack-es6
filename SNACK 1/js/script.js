@@ -5,16 +5,18 @@ let ospiti=[
 
 let cena;
 // ARRAY MAP
-let listaInvitati = ospiti.map((item,index) => {
+let listaInvitati = ospiti.map((item,i) => {
 
-    cena = {
-        tavolo: 'Tavolo Vip',
-        nome : item,
-        posto: (index + 10)
+    return cena = {
+        'tavolo': 'Tavolo Vip',
+        'nome' : item,
+        'posto': (i + 10)
     }
-        return cena
+
        
 })
+
+console.log(listaInvitati)
 
 // CICLO FOR PER STAMPARE IN CONSOLE I DATI INSERITI
 listaInvitati.forEach((elem)=>{
