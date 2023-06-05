@@ -1,5 +1,5 @@
 
-// OBJECTS
+// ARRAY DI OBJECTS
 const student = [
     {
         'id': '213',
@@ -41,9 +41,14 @@ const student = [
 
 console.log(student)
 
-// PROPRIETA FILTER PER FILTRARE DALLA LISA DI OBJECT GLI STUDENTI CHE HANNO AVUTO UN VOTO SUPERIORE A 70
+// // PROPRIETA MAP ALL'ARRAY PER METTERE IN MAIUSCOLO IL NOME DEGLI STUDENTI
+const upper = student.map((student)=> student.nome.toUpperCase())
+console.log(upper)
+
+// PROPRIETA FILTER ALL'ARRAY PER FILTRARE DALLA LISTA DI OBJECT GLI STUDENTI CHE HANNO AVUTO UN VOTO SUPERIORE A 70
 const voti = student.filter((item)=>{if (item.voto >= '70') return true } )
 console.log(voti)
 
-const votiId = voti.filter((item)=>{if (item.id >= '120') return true } )
+// PROPRIETA FILTER ALL'ARRAY PER FILTRARE DALLA LISTA DI OBJECT GLI STUDENTI CHE HANNO UN ID SUPERIORE O UGUALE A 120 E HANNO AVUTO UN VOTO SUPERIORE A 70
+const votiId = voti.filter((item)=>{if (item.id > '120') return true } )
 console.log(votiId)

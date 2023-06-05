@@ -12,3 +12,12 @@ Id  Name                Grades
 196 Luigi Grimaldello 	    68
 102 Piero della Francesca   50
 120 Francesca da Polenta    84
+
+SOLUZIONE:
+
+1- Creare un array di oggetti con le caratteristiche degli studenti.
+2- Inserire un array con la proptietà map per restituire il nome degli studenti in maiuscolo
+3- Inserire un array con la proprità filter per restituire solo gli studenti che hanno avuto un voto superiore a 70
+4- Inserire un array con la proprità filter per restituire solo gli studenti che hanno avuto un voto superiore a 70 e un id superiore a 120
+
+FINE
