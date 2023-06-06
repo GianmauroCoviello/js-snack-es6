@@ -36,19 +36,18 @@ const bicycles = [
 console.log(bicycles)
 
 
-
+// INSERIAMO LA VARIABILE PREDENDO COME RIFERIMENTO IL PRIMO ELEMENTO DELL'ARRAY
 let lighterBike = bicycles[0]
 
-bicycles.forEach(({name,peso})=>{
+bicycles.forEach((elem)=>{
 
-    if (peso < lighterBike.peso) {
+    if (elem.peso < lighterBike.peso) {
         
-        lighterBike= {name,peso}
+        elem.peso= lighterBike.peso
         
     }
     
 })
-
 console.log(lighterBike)
 
 console.log( `La bici più leggera è ${lighterBike.name} con un peso di circa ${lighterBike.peso}kg`)
